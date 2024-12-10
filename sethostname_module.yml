@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - name: "update hostnames"
+      ansible.builtin.hostname:
+        name: "{{new_hostname}}"
