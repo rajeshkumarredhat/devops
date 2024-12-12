@@ -3,6 +3,6 @@
   tasks:  
   - name: Download file directly from GitHub
     ansible.builtin.get_url:
-     url: "https://github.com/rajeshkumarredhat/devops/blob/master/kkk.txt:"
+     url: "https://github.com/rajeshkumarredhat/devops/kkk.txt"
      dest: "/tmp/repo.txt"
      mode: '0644'
