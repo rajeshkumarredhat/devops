@@ -1,0 +1,8 @@
+- hosts: all
+  become: yes
+  tasks:  
+  - name: Download file directly from GitHub
+    ansible.builtin.get_url:
+     url: "https://github.com/rajeshkumarredhat/devops/main/kkk.txt"
+     dest: "/tmp/repo.txt"
+     mode: '0644'
