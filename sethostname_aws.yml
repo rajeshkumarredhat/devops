@@ -1,6 +1,6 @@
 ---
-- hosts: aws_nodename
+- hosts: "{{ aws_nodename }}"
   tasks:
     - name: "update hostnames"
       ansible.builtin.hostname:
-        name: "{{desired_hostname}}"
+        name: "{{ desired_hostname }}"
